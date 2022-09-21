@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp4.Error"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Error" Height="233.036" Width="573.852" WindowStyle="None" Background="Gray" AllowsTransparency="True">
+    <Grid>
+        <TextBlock Background="White" OpacityMask="Black"  MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" VerticalAlignment="Center" Height="34" Margin="0,0,0,199" ></TextBlock>
+        <TextBlock x:Name="WindowName" OpacityMask="Black" VerticalAlignment="Center" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Margin="10,9,116,208" >Error</TextBlock>
+        <Button  Click="Button_Click" Background="#c9302b" Margin="516,5,10,199" Width="48" Height="29" >X</Button>
+        <Button  Click="Button_Click_1" Background="#032a82" Foreground="White" Margin="463,5,63,199" Width="48" Height="29" >__________</Button>
+        <Image Source="Resources/Знак.png" Margin="36,65,389,26"></Image>
+        <TextBlock x:Name="eText" Margin="185,65,10,26" Background="White"></TextBlock>
+        <TextBlock x:Name="errormes" Margin="185,65,10,26" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="28"></TextBlock>
+    </Grid>
+</Window>

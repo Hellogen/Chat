@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp4.auth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="auth" Height="450" Width="430.357" WindowStyle="None" AllowsTransparency="True" Background="Gray">
+    <Grid>
+        <TextBlock Background="White" Margin="0,0,0,416" MouseLeftButtonDown="titleBar_MouseLeftButtonDown" ></TextBlock>
+        <TextBlock x:Name="WindowName" VerticalAlignment="Center" Margin="10,9,116,425" MouseLeftButtonDown="titleBar_MouseLeftButtonDown" >Authentification</TextBlock>
+        <Button Margin="372,5,10,416" Background="#c9302b" Click="Button_Click">X</Button>
+        <Button Margin="319,5,63,416" Background="#FF1D3F8D" Click="Button_Click_2" Foreground="White">__________</Button>
+        <TextBox x:Name="IpInput" Margin="38,95,133,291">127.0.0.1</TextBox>
+        <TextBox x:Name="PortInput" Margin="38,177,133,209">8888</TextBox>
+        <TextBox x:Name="NameInput" Margin="38,263,133,123">Test</TextBox>
+        <Button  Margin="161,376,10,10" Content="Подключиться" Click="Button_Click_1"/>
+        <Label  Margin="319,95,10,291" VerticalAlignment="Center" HorizontalAlignment="Center" Background="White" Height="64" Width="101">IP</Label>
+        <Label  Margin="319,177,10,209" VerticalAlignment="Center" HorizontalAlignment="Center" Background="White" Height="64" Width="101">Port</Label>
+        <Label  Margin="319,263,10,123" VerticalAlignment="Center" HorizontalAlignment="Center" Background="White" Height="64" Width="101">Name</Label>
+        <Button Margin="38,376,291,10" Click="Button_Click_3">Справка</Button>
+    </Grid>
+</Window>
